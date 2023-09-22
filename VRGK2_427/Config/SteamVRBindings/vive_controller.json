@@ -1,0 +1,152 @@
+{
+	"name": "Default bindings for Vive",
+	"controller_type": "vive_controller",
+	"last_edited_by": "UnrealEngine",
+	"bindings":
+	{
+		"/actions/main": {
+			"poses": [
+				{
+					"output": "/actions/main/in/controllerleft",
+					"path": "/user/hand/left/pose/raw",
+					"requirement": "optional"
+				},
+				{
+					"output": "/actions/main/in/controllerright",
+					"path": "/user/hand/right/pose/raw"
+				}
+			],
+			"haptics": [
+				{
+					"output": "/actions/main/out/vibrateleft",
+					"path": "/user/hand/left/output/haptic"
+				},
+				{
+					"output": "/actions/main/out/vibrateright",
+					"path": "/user/hand/right/output/haptic"
+				}
+			],
+			"sources": [
+				{
+					"path": "/user/hand/left/input/trigger",
+					"mode": "trigger",
+					"inputs": {
+						"pull": {
+							"output": "/actions/main/in/triggerleft_axis axis"
+						}
+					}
+				},
+				{
+					"path": "/user/hand/left/input/trigger",
+					"mode": "button",
+					"parameters": {
+						"click_activate_threshold": "0.9"
+					},
+					"inputs": {
+						"click": {
+							"output": "/actions/main/in/triggerleft_action"
+						}
+					}
+				},
+				{
+					"path": "/user/hand/right/input/trigger",
+					"mode": "trigger",
+					"inputs": {
+						"pull": {
+							"output": "/actions/main/in/triggerright_axis axis"
+						}
+					}
+				},
+				{
+					"path": "/user/hand/right/input/trigger",
+					"mode": "button",
+					"parameters": {
+						"click_activate_threshold": "0.9"
+					},
+					"inputs": {
+						"click": {
+							"output": "/actions/main/in/triggerright_action"
+						}
+					}
+				},
+				{
+					"path": "/user/hand/left/input/trackpad",
+					"mode": "trackpad",
+					"inputs": {
+						"position": {
+							"output": "/actions/main/in/movement_x,movement_y x y_axis2d"
+						},
+						"touch": {
+							"output": "/actions/main/in/handtouchthumbleft"
+						},
+						"click": {
+							"output": "/actions/main/in/buttonleft_action"
+						}
+					}
+				},
+				{
+					"path": "/user/hand/right/input/trackpad",
+					"mode": "trackpad",
+					"inputs": {
+						"position": {
+							"output": "/actions/main/in/rightthumbstick_x,rightthumbstick_y x y_axis2d"
+						},
+						"click": {
+							"output": "/actions/main/in/buttonright_action"
+						},
+						"touch": {
+							"output": "/actions/main/in/handtouchthumbright"
+						}
+					}
+				},
+				{
+					"path": "/user/hand/left/input/application_menu",
+					"mode": "button",
+					"inputs": {
+						"click": {
+							"output": "/actions/main/in/menu"
+						}
+					}
+				},
+				{
+					"path": "/user/hand/right/input/application_menu",
+					"mode": "button",
+					"inputs": {
+						"click": {
+							"output": "/actions/main/in/jump"
+						}
+					}
+				},
+				{
+					"path": "/user/hand/left/input/grip",
+					"mode": "button",
+					"inputs": {
+						"click": {
+							"output": "/actions/main/in/grableft_action"
+						}
+					}
+				},
+				{
+					"path": "/user/hand/right/input/grip",
+					"mode": "button",
+					"inputs": {
+						"click": {
+							"output": "/actions/main/in/grabright_action"
+						}
+					}
+				}
+			],
+			"skeleton": [
+				{
+					"output": "/actions/main/in/skeletonleft",
+					"path": "/user/hand/left/input/skeleton/left"
+				},
+				{
+					"output": "/actions/main/in/skeletonright",
+					"path": "/user/hand/right/input/skeleton/right"
+				}
+			]
+		}
+	},
+	"description": "VRGK-14469661"
+}

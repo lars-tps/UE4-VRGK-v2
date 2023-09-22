@@ -1,0 +1,205 @@
+{
+	"name": "Default bindings for ValveIndex",
+	"controller_type": "knuckles",
+	"last_edited_by": "UnrealEngine",
+	"bindings":
+	{
+		"/actions/main" : {
+		   "haptics" : [
+			  {
+				 "output" : "/actions/main/out/vibrateleft",
+				 "path" : "/user/hand/left/output/haptic"
+			  },
+			  {
+				 "output" : "/actions/main/out/vibrateright",
+				 "path" : "/user/hand/right/output/haptic"
+			  }
+		   ],
+		   "poses" : [
+			  {
+				 "output" : "/actions/main/in/controllerleft",
+				 "path" : "/user/hand/left/pose/raw",
+				 "requirement" : "optional"
+			  },
+			  {
+				 "output" : "/actions/main/in/controllerright",
+				 "path" : "/user/hand/right/pose/raw"
+			  }
+		   ],
+		   "skeleton" : [
+			  {
+				 "output" : "/actions/main/in/skeletonleft",
+				 "path" : "/user/hand/left/input/skeleton/left"
+			  },
+			  {
+				 "output" : "/actions/main/in/skeletonright",
+				 "path" : "/user/hand/right/input/skeleton/right"
+			  }
+		   ],
+		   "sources" : [
+			  {
+				 "inputs" : {
+					"pull" : {
+					   "output" : "/actions/main/in/triggerleft_axis axis"
+					}
+				 },
+				 "mode" : "trigger",
+				 "path" : "/user/hand/left/input/trigger"
+			  },
+			  {
+				 "inputs" : {
+					"click" : {
+					   "output" : "/actions/main/in/triggerleft_action"
+					}
+				 },
+				 "mode" : "button",
+				 "parameters" : {
+					"click_activate_threshold" : "0.9"
+				 },
+				 "path" : "/user/hand/left/input/trigger"
+			  },
+			  {
+				 "inputs" : {
+					"pull" : {
+					   "output" : "/actions/main/in/triggerright_axis axis"
+					}
+				 },
+				 "mode" : "trigger",
+				 "path" : "/user/hand/right/input/trigger"
+			  },
+			  {
+				 "inputs" : {
+					"click" : {
+					   "output" : "/actions/main/in/triggerright_action"
+					}
+				 },
+				 "mode" : "button",
+				 "parameters" : {
+					"click_activate_threshold" : "0.9"
+				 },
+				 "path" : "/user/hand/right/input/trigger"
+			  },
+			  {
+				 "inputs" : {
+					"click" : {
+					   "output" : "/actions/main/in/thumbstickleft_action"
+					},
+					"position" : {
+					   "output" : "/actions/main/in/movement_x,movement_y x y_axis2d"
+					}
+				 },
+				 "mode" : "joystick",
+				 "path" : "/user/hand/left/input/thumbstick"
+			  },
+			  {
+				 "inputs" : {
+					"east" : {
+					   "output" : "/actions/main/in/rotate_right"
+					},
+					"west" : {
+					   "output" : "/actions/main/in/rotate_left"
+					}
+				 },
+				 "mode" : "dpad",
+				 "parameters" : {
+					"sub_mode" : "touch"
+				 },
+				 "path" : "/user/hand/right/input/thumbstick"
+			  },
+			  {
+				 "inputs" : {
+					"click" : {
+					   "output" : "/actions/main/in/thumbstickright_action"
+					},
+					"position" : {
+					   "output" : "/actions/main/in/rightthumbstick_x,rightthumbstick_y x y_axis2d"
+					}
+				 },
+				 "mode" : "joystick",
+				 "path" : "/user/hand/right/input/thumbstick"
+			  },
+			  {
+				 "inputs" : {
+					"click" : {
+					   "output" : "/actions/main/in/menu"
+					}
+				 },
+				 "mode" : "button",
+				 "path" : "/user/hand/left/input/b"
+			  },
+			  {
+				 "inputs" : {
+					"click" : {
+					   "output" : "/actions/main/in/jump"
+					}
+				 },
+				 "mode" : "button",
+				 "path" : "/user/hand/right/input/b"
+			  },
+			  {
+				 "inputs" : {
+					"click" : {
+					   "output" : "/actions/main/in/buttonleft_action"
+					}
+				 },
+				 "mode" : "button",
+				 "path" : "/user/hand/left/input/a"
+			  },
+			  {
+				 "inputs" : {
+					"click" : {
+					   "output" : "/actions/main/in/buttonright_action"
+					}
+				 },
+				 "mode" : "button",
+				 "path" : "/user/hand/right/input/a"
+			  },
+			  {
+				 "inputs" : {
+					"pull" : {
+					   "output" : "/actions/main/in/grableft_axis axis"
+					}
+				 },
+				 "mode" : "trigger",
+				 "path" : "/user/hand/left/input/grip"
+			  },
+			  {
+				 "inputs" : {
+					"pull" : {
+					   "output" : "/actions/main/in/grabright_axis axis"
+					}
+				 },
+				 "mode" : "trigger",
+				 "path" : "/user/hand/right/input/grip"
+			  },
+			  {
+				 "inputs" : {
+					"click" : {
+					   "output" : "/actions/main/in/grableft_action"
+					}
+				 },
+				 "mode" : "button",
+				 "parameters" : {
+					"click_activate_threshold" : "0.85",
+					"click_deactivate_threshold" : "0.8"
+				 },
+				 "path" : "/user/hand/left/input/grip"
+			  },
+			  {
+				 "inputs" : {
+					"click" : {
+					   "output" : "/actions/main/in/grabright_action"
+					}
+				 },
+				 "mode" : "button",
+				 "parameters" : {
+					"click_activate_threshold" : "0.85",
+					"click_deactivate_threshold" : "0.8"
+				 },
+				 "path" : "/user/hand/right/input/grip"
+			  }
+		   ]
+		}
+	},
+	"description": "VRGK-14469661"
+}
