@@ -1,8 +1,7 @@
 # VIRTUAL REALITY GAME KIT FOR UNREAL ENGINE 4
 
-# DISCLAIMER: I AM NOT THE DEVELOPER OF VRGK. I'm only adding this repository because 
-# all versions of VRGK are discontinued and are no longer sold, and I think people should
-# be able to use this beautiful kit for their games.
+# DISCLAIMER: I AM NOT THE DEVELOPER OF VRGK. 
+I'm only adding this repository because all versions of VRGK are discontinued and are no longer sold, and I think people should be able to use this beautiful kit for their games.
 
 VRGK (Virtual Reality Game Kit) is a very useful VR template for Unreal Engine. It is full of amazing scripts, physics systems and demo blueprints. You can easily develop a lot of amazing VR games with this template.
 
